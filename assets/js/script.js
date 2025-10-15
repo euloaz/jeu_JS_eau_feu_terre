@@ -37,6 +37,8 @@ eau.addEventListener("click", () =>{
     userResult.textContent = player;
     computerResult.textContent = pc;
     message.textContent = playGame(player,pc);
+    userScore.textContent = uScore;
+    computerScore.textContent = pcScore;
 })
 terre.addEventListener("click", () =>{
     let player = userChoice("\u{1F331}");
@@ -45,6 +47,8 @@ terre.addEventListener("click", () =>{
     userResult.textContent = player;
     computerResult.textContent = pc;
     message.textContent = playGame(player,pc);
+    userScore.textContent = uScore;
+    computerScore.textContent = pcScore;
 })
 function playGame(userChoice, computerChoice){
     if (userChoice === computerChoice){
