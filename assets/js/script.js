@@ -77,7 +77,8 @@ function playGame(userChoice, computerChoice) {
 const modal = document.getElementById('modal');
 const titleModal = document.querySelector('#modal .box h2');
 const commentModal = document.querySelector('#modal .box p');
-const emojiModal = document.querySelector('#modal .box span')
+const emojiModal = document.querySelector('#modal .box span');
+const buttonModal = document.querySelector('#modal .box button');
 
 function checkScore() {
     if (uScore == 10) {
@@ -92,3 +93,17 @@ function checkScore() {
         emojiModal.textContent = '\u{1F9A7}';
     }
 }
+function reset(){
+    uScore = 0;
+    pcScore = 0;
+
+    userScore.textContent = uScore;
+    computerScore.textContent = pcScore;
+    userResult.textContent = '';
+    computerResult.textContent = '';
+    message.textContent = '';
+}
+buttonModal.addEventListener("click", () =>{
+    modal.style.display = 'none';
+    reset();
+})
