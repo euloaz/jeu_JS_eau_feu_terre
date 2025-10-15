@@ -1,4 +1,96 @@
+@font-face {
+    font-family: 'Valera';
+    src: url('../font/VarelaRound-Regular.ttf');
+}
 *{
     padding: 0;
     margin: 0;
+}
+body {
+    background-color: #F4F4F4;
+    font-family: 'Valera', sans-serif;
+}
+h2{
+    font-size: 18px;
+}
+span {
+    font-weight: bold;
+    font-size: 50px;
+}
+#game {
+    background-color: white;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 10rem;
+    border-radius: 50px;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.element{
+    width: 33.33%;
+}
+#game .arena {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    width: 90%;
+}
+#game .arena .computer-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#game .arena .player-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+button {
+    padding: 1rem 2rem ;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+#feu {
+    background-color: #FA8039;
+    border: 1px solid #FA8039;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#feu:hover{
+    background-color: #F4F4F4;
+    color: #FA8039;
+}
+#eau{
+    background-color: #71A1FF;
+    border: 1px solid #71A1FF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#eau:hover{
+    background-color: #F4F4F4;
+    color: #71A1FF;
+}
+#terre {
+    background-color: #91CD31;
+    border: 1px solid #91CD31;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#terre:hover{
+    background-color: #F4F4F4;
+    color: #91CD31;
 }
