@@ -17,12 +17,11 @@ span {
     font-weight: bold;
     font-size: 50px;
 }
+#modal{display: none;}
 #game {
     background-color: white;
-    margin: 0 auto;
-    width: 80%;
     max-width: 1200px;
-    margin-top: 10rem;
+    margin: 10rem auto;
     border-radius: 50px;
     padding: 5rem;
     display: flex;
@@ -66,11 +65,15 @@ button {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+button:hover{
+    box-shadow: none;
 }
 #feu {
     background-color: #FA8039;
     border: 1px solid #FA8039;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
 }
 #feu:hover{
     background-color: #F4F4F4;
@@ -79,7 +82,6 @@ button {
 #eau{
     background-color: #71A1FF;
     border: 1px solid #71A1FF;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 #eau:hover{
     background-color: #F4F4F4;
@@ -88,9 +90,40 @@ button {
 #terre {
     background-color: #91CD31;
     border: 1px solid #91CD31;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 #terre:hover{
+    background-color: #F4F4F4;
+    color: #91CD31;
+}
+
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#modal .box {
+    background-color: white;
+    width: 500px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    border-radius: 15px;
+}
+#modal .box button {
+    background-color: #91CD31;
+    border: 1px solid #91CD31;
+}
+#modal .box button:hover {
     background-color: #F4F4F4;
     color: #91CD31;
 }
